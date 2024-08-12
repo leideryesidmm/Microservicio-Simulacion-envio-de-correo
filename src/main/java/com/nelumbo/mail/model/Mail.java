@@ -1,12 +1,13 @@
 package com.nelumbo.mail.model;
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import com.nelumbo.mail.dto.AnimalDtoReq;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+
+import java.time.LocalDateTime;
 
 @Data
 @Document(collection = "mails")
@@ -18,9 +19,11 @@ public class Mail {
     @NotBlank
     private String destinationEmail;
     @NotNull
-    private Long animal;
+    private Animal animal;
     @NotBlank
-    private Long writer;
+    private Writer writer;
     @NotBlank
     private String message;
+    @NotNull
+    private LocalDateTime date;
 }

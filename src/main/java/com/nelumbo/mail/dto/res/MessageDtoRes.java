@@ -1,4 +1,4 @@
-package com.nelumbo.mail.dto;
+package com.nelumbo.mail.dto.res;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

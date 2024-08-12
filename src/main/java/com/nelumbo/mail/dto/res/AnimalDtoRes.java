@@ -1,13 +1,12 @@
-package com.nelumbo.mail.dto;
+package com.nelumbo.mail.dto.res;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 @Data
-public class WriterDtoReq {
-    @NotNull
+public class AnimalDtoRes {
     private Long id;
-    @NotBlank
+    private String species;
     private String name;
 }

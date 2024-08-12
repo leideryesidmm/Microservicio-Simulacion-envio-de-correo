@@ -1,4 +1,4 @@
-package com.nelumbo.mail.dto;
+package com.nelumbo.mail.dto.req;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -9,7 +9,7 @@ public class AnimalDtoReq{
     @NotNull
     private Long id;
     @NotBlank
-    private String specie;
+    private String species;
     @NotBlank
     private String name;
 }
